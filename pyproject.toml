@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "the_best_codebase_ever"
+version = "0.1.0"
+description = "A collection of tools for GVSC EET data analysis."
+authors = ["Grady Lynn <blah@blah.com>"]
+
+
+### If I uncomment the source definition below, everything works as expected.
+### But this strikes me as a bug - a codebase shouldn't need to know the sources of its path-package dependencies.
+### When defining a path dependency, poetry should use the alternative sources defined in that package's pyproject.toml
+
+# [[tool.poetry.source]]
+# name = "rospypi"
+# url = "https://rospypi.github.io/simple/"
+
+
+[tool.poetry.dependencies]
+my_package = {path = "./my_package", develop = false}

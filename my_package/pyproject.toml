@@ -1,0 +1,20 @@
+[tool.poetry]
+name = "my_package"
+version = "0.0.1"
+description = "The best package ever."
+authors = ["Grady Lynn <blah@blah.com>"]
+
+
+[[tool.poetry.source]]
+name = "rospypi"
+url = "https://rospypi.github.io/simple/"
+
+
+[tool.poetry.dependencies]
+# this is the non-pypi package that I was trying to install
+roslz4 = {version = "^1.14.0", source = "rospypi"}
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

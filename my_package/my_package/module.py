@@ -1,5 +1,5 @@
 
-if __name__ == '__main__':
+def func():
     print('''\
     There are no ordinary people.
     You have never talked to a mere mortal.

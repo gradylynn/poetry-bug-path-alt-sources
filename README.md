@@ -1,3 +1,7 @@
+This repo demonstrates what I thought was a bug in python-poetry, but is actually just a quirk of python packaging standards. See the issue I opened [here](https://github.com/python-poetry/poetry/issues/6728).
+
+---
+
 I think that that this repo demonstrates a bug in the way that poetry installs
 path dependencies that use non-pypi sources.
 
